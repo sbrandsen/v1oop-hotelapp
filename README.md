@@ -1,4 +1,4 @@
-hotels.HotelApp
+HotelApp
 ===================================
 
 Clone dit project met de command-line of IntelliJ ([instructies](https://www.jetbrains.com/help/idea/manage-projects-hosted-on-github.html#clone-from-GitHub)). Als IntelliJ je na het klonen vraagt of je een nieuw project wilt creëren, kies dan 'Yes' en gebruik de default-instellingen van de wizard!     
