@@ -39,6 +39,15 @@ public class Hotel {
 		return Collections.unmodifiableList(alleKamerTypen);
 	}
 
+	public List<String> getTypeNamen(){
+		List<String> typen = new ArrayList<>();
+
+		for(KamerType k : getKamerTypen()){
+			typen.add(k.getTypeNaam());
+		}
+		return typen;
+	}
+
 	public List<Boeking> getBoekingen() {
 		return Collections.unmodifiableList(alleBoekingen);
 	}

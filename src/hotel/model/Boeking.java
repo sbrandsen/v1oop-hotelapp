@@ -1,5 +1,7 @@
 package hotel.model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 public class Boeking {
@@ -51,5 +53,13 @@ public class Boeking {
 		gelijk = gelijk && ((Boeking) obj).geboekteKamer.equals(geboekteKamer);
 
 		return gelijk;
+	}
+
+	@Override
+	public String toString() {
+
+		//g begin-/einddatum, kamernummer en klantnaam
+		return aankomstDatum.toString()  + " tot " + vertrekDatum.toString() + ". Kamernummer: " + geboekteKamer.getKamerNummer() +
+				 " , Klant: " + boeker.getNaam();
 	}
 }
